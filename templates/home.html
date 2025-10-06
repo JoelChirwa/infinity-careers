@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="static/messrro-8GlNjM_5HLQ-unsplash.jpg" alt="infinity careers banner">
     <div class="container">
         <h1 class="text-center mt-4 mb-4">Infinity Careers</h1>
-        <img class="img-fluid" id="banner" src="static/messrro-8GlNjM_5HLQ-unsplash.jpg" alt="infinity careers banner">
-        <h2 class="text-center mt-4">About Infinity Careers</h2>
+        
         <p class="lead">
             <strong>Infinity Careers</strong> is your gateway to limitless job opportunities across the world. We connect skilled professionals with top employers offering both on-site and remote positions in diverse industries. Whether you’re seeking local opportunities or global exposure, Infinity Careers empowers you to find, grow and thrive in your dream career with confidence and purpose.
         </p>
@@ -24,8 +25,8 @@
             {% endfor %}
         </div>
 
-        <div class="text-center mt-4 mb-4">
-            <button class="btn btn-primary btn-lg">Contact Us</button>
+        <div>
+          {% include 'footer.html' %}
         </div>
     </div>
 </body>
